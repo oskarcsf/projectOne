@@ -37,9 +37,15 @@ function locationHashChanged() {
         progressBarAnimation([10, 20, 40, 60, 100, 80]);
     }
 
+    if (location.hash === '#services') {
+        $(`.card`).hide();
+        $(`.card--service`).show();
+    }
+
 }
 
 
 window.onhashchange = locationHashChanged;
+location.hash = '#home';
 $(`.card`).hide();
 $(`.card--home`).show();

@@ -273,6 +273,67 @@ footer {
   background-color: #2ECA7F;
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services .services__items {
+  width: 25%;
+  padding: 1rem;
+}
+
+.services .services__items .image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #D2D2D2;
+  margin: 1rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.services .services__items .image-container:hover {
+  position: abolsute;
+  top: -10px;
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.services .services__items .image-container img {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 100px;
+}
+
+.services .services__items h5 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.services .services__items p {
+  color: #9E9E9E;
+  text-align: center;
+}
+
+.client__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client__list .clients__items {
+  width: calc(100% / 6);
+  position: relative;
+}
+
+.client__list .clients__items img:hover {
+  position: absolute;
+  top: -10px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
