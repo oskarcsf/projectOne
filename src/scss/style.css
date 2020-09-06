@@ -216,7 +216,7 @@ footer {
   width: 10px;
   height: 10px;
   position: absolute;
-  left: -55px;
+  left: -62px;
   border-radius: 50%;
   border: 2px solid #2ECA7F;
   background-color: white;
@@ -225,10 +225,10 @@ footer {
 .resume .resume_items .item-title::after {
   content: " ";
   top: 4px;
-  width: 21px;
+  width: 27px;
   height: 2px;
   position: absolute;
-  left: -45px;
+  left: -52px;
   border: 0.5px solid #2ECA7F;
 }
 
@@ -258,6 +258,19 @@ footer {
 .skills .skills__design .skill_title,
 .skills .skills__coding .skill_title {
   font-weight: bold;
+}
+
+.skills .skills__design .skills_container,
+.skills .skills__coding .skills_container {
+  width: 90%;
+  background-color: grey;
+}
+
+.skills .skills__design .skills_container .bar,
+.skills .skills__coding .skills_container .bar {
+  width: 1%;
+  height: 30px;
+  background-color: #2ECA7F;
 }
 
 * {

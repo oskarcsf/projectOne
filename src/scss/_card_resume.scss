@@ -49,7 +49,7 @@
             width: 10px;
             height: 10px;
             position: absolute;
-            left: -55px;
+            left: -62px;
             border-radius: 50%;
             border: 2px solid $primary-color;
             background-color: white;
@@ -58,10 +58,10 @@
         .item-title::after {
             content: " ";
             top: 4px;
-            width: 21px;
+            width: 27px;
             height: 2px;
             position: absolute;
-            left: -45px;
+            left: -52px;
             border: 0.5px solid $primary-color;
         }
     }
@@ -85,6 +85,17 @@
 
         .skill_title{
             font-weight: bold;
+        }
+
+        .skills_container{
+            width: 90%;
+            background-color: grey;
+
+            .bar{
+                width: 1%;
+                height: 30px;
+                background-color: $primary-color;
+            }
         }
     }
 }
