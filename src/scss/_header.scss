@@ -1,0 +1,36 @@
+@import 'variables';
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .navbar--home--logo a{
+        text-decoration: none;
+        color: $primary-font-color;
+
+        &:hover{
+            text-decoration: none;
+            color: $primary-font-color;
+        }
+    }
+
+    .navbar__items a{
+        color: #9E9E9E;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+            color: $primary-font-color;
+        }
+
+    }
+
+    .navbar__items--position li{
+        display: inline;
+        
+        a{
+            padding: 10px;
+        }
+    }
+}

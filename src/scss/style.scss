@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'header';
+@import 'cards';
+@import 'footer';
+@import 'card_home';
+@import 'card_resume';
+
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+.my--container{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    fill: $secondary-font-color;
+    overflow: hidden;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+
+    &:hover{
+        // transition: 0.5s;
+        transform: scale(1.2);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+

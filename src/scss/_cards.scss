@@ -1,0 +1,28 @@
+@import 'variables';
+
+.card {
+    border-radius: $card-radius;
+
+
+    .card__top--theme {
+        background-color: $primary-color;
+        border-radius: 1em 1em 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2em;
+        color: white;
+        
+
+        h1{
+            margin: auto;
+            font-weight: bold;
+        }
+    }
+
+    .card__bottom {
+        padding: 3em;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,90 @@
+@import 'variables';
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+
+    .card--resume__bottom__education,
+    .card--resume__bottom__experience {
+        width: 50%;
+    }
+
+    .timeline {
+        padding: 1rem;
+        border-left: 1px solid grey;
+    }
+
+    .resume_items {
+        padding: 1.5rem;
+        margin: 1rem;
+        border: 1px solid lightgrey;
+        border-left: 2px solid $primary-color;
+
+
+
+        h5 {
+            font-weight: bolder;
+        }
+
+        h6 {
+            color: $primary-color;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .item-title {
+            position: relative;
+        }
+
+        .item-title::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: -55px;
+            border-radius: 50%;
+            border: 2px solid $primary-color;
+            background-color: white;
+        }
+
+        .item-title::after {
+            content: " ";
+            top: 4px;
+            width: 21px;
+            height: 2px;
+            position: absolute;
+            left: -45px;
+            border: 0.5px solid $primary-color;
+        }
+    }
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+
+    .skills__design,
+    .skills__coding{
+        width: 50%;
+
+        progress{
+            width: 90%;
+        }
+
+        .skill_title{
+            font-weight: bold;
+        }
+    }
+}
