@@ -4,7 +4,7 @@ for (let i = 0; i < bar.length; i++) {
     bar[i].className += ' bar' + (i + 1);
 }
 
-// adding progress bar animation
+// adding progress bar animation 
 const progressBarAnimation = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         let width = 1;
@@ -24,28 +24,31 @@ const progressBarAnimation = (arr) => {
 
 
 //hidding all cards by default, only show when locationHashChange
+
 function locationHashChanged() {
-    
-    if (location.hash === '#home') {
-        $(`.card`).hide();
-        $(`.card--home`).show();
-    }
+    $(`.card`).hide();
+    switch (location.hash) {
+        case ('#home'):
+            $(`.card--home`).show();
+            break;
 
-    if (location.hash === '#resume') {
-        $(`.card`).hide();
-        $(`.card--resume`).show();
-        progressBarAnimation([10, 20, 40, 60, 100, 80]);
-    }
+        case ('#resume'):
 
-    if (location.hash === '#services') {
-        $(`.card`).hide();
-        $(`.card--service`).show();
-    }
+            $(`.card--resume`).show();
+            progressBarAnimation([10, 20, 40, 60, 100, 80]);
+            break;
 
+        case ('#services'):
+            $(`.card--service`).show();
+            break;
+
+        default:
+            $(`.card`).hide();
+            location.hash = '#home';
+    }
 }
 
 
-window.onhashchange = locationHashChanged;
-location.hash = '#home';
-$(`.card`).hide();
-$(`.card--home`).show();
+    $(`.card`).hide();
+    $(`.card--home`).show();
+    window.onhashchange = locationHashChanged;
