@@ -42,6 +42,16 @@ function locationHashChanged() {
             $(`.card--service`).show();
             break;
 
+        case ('#blog'):
+            $(`.card--blog`).show();
+            break;
+
+
+        case ('#contact'):
+            $(`.card--contact`).show();
+            break;
+
+
         default:
             $(`.card`).hide();
             location.hash = '#home';
@@ -49,6 +59,6 @@ function locationHashChanged() {
 }
 
 
-    $(`.card`).hide();
-    $(`.card--home`).show();
-    window.onhashchange = locationHashChanged;
+$(`.card`).hide();
+locationHashChanged('#home');
+window.onhashchange = locationHashChanged;

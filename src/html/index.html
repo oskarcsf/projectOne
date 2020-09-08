@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oskar's Personal Profile</title>
+    <!-- links for mapbox api -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
     <link type="text/css" rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700Google+Sans:400,500,700">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -65,7 +69,7 @@
                                 <dt>Address</dt>
                                 <dd>Level 3 / 57 Coronation Drive, Brisbane</dd>
                                 <dt>e-mail</dt>
-                                <dd><a href="mailto:webmaster@example.com">info@jiangren.com.au</a></dd>
+                                <dd><a href="mailto:info@jiangren.com.au">info@jiangren.com.au</a></dd>
                                 <dt>Phone</dt>
                                 <dd>+0123 123 456 789</dd>
                             </dl>
@@ -227,6 +231,119 @@
                         </div>
                     </div>
                 </div>
+                <div class="card card--blog">
+                    <div class="card__top--theme">
+                        <h1>Blogs</h1>
+                    </div>
+                    <div class="card__bottom card__bottom--services">
+                        <h3>My Blogs</h3>
+                        <div class="blog--container">
+                            <div class="blog--items">
+                                <div class="imageHover"></div>
+                                <img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                            <div class="blog--items"><img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                            <div class="blog--items"><img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                            <div class="blog--items"><img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                            <div class="blog--items"><img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                            <div class="blog--items"><img src="https://picsum.photos/300/200" alt="random blog pic">
+
+                                <div class="date">12 Dec</div>
+                                <div class="description">
+                                    <span>jQuery</span><br>
+                                    <span>This is blog Title</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--contact">
+                    <div class="card__top--theme">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div class="card__bottom card__bottom--services d-flex justify-content-between">
+                        <div class="info_block col-md-5 col-sm-12 col-xs-12">
+                            <h3>Get in Touch</h3>
+                            <div id='map'></div>
+                            <p><svg class="icon contact_icon" aria-hidden="true">
+                                    <use xlink:href="#icon-Marker"></use>
+                                </svg>Melbourne, Australia</p>
+                            <p><svg class="icon contact_icon" aria-hidden="true">
+                                    <use xlink:href="#icon-Email"></use>
+                                </svg><a href="mailto:info@jiangren.com.au">info@jiangren.com.au</a></p>
+                            <p><svg class="icon contact_icon" aria-hidden="true">
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>+61 123456789</p>
+                            <p><svg class="icon contact_icon" aria-hidden="true">
+                                    <use xlink:href="#icon-buywebhostingstep1domainavailable"></use>
+                                </svg>Freelance Available</p>
+                        </div>
+
+                        <div class="form_block col-md-5 col-sm-12 col-xs-12">
+                            <h3>Contact Form</h3>
+                            <form action="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="formName" placeholder="Enter name"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Message for Me" required></textarea>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+                                            required>
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit"
+                                    style="background-color: #2ECA7F; border:none;">Submit form</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer footer__position">
@@ -266,7 +383,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
+    <!-- mapbox js -->
+    <script src="../js/map.js"></script>
     <!-- icfont js -->
     <script src="../lib/iconfont/iconfont.js"></script>
     <!-- user javascript link -->

@@ -5,6 +5,8 @@
 @import 'card_home';
 @import 'card_resume';
 @import 'card_services';
+@import 'card_blog';
+@import 'card_contact';
 
 
 *{
@@ -23,7 +25,6 @@ body{
     position: relative;
 }
 
-
 .icon {
     width: 2em;
     height: 2em;
@@ -41,3 +42,10 @@ body{
     }
 }
 
+
+.contact_icon{
+    padding-bottom: 0;
+    margin-right: 5px;
+    width: 2em;
+    height: 2em;
+}
