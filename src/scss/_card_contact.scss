@@ -1,9 +1,17 @@
 @import 'variables';
 
-.info_block, 
-.form_block{
-    width: 45%;
-    margin: 0.5rem;
+.info_block,
+.form_block {
+    // width: 50%;
+    padding: 1rem;
+
+    form {
+        input,
+        textarea {
+            border: none;
+            background-color: #FAFAFA;
+        }
+    }
 }
 
 #map {

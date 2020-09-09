@@ -315,8 +315,14 @@ footer {
 
 .info_block,
 .form_block {
-  width: 45%;
-  margin: 0.5rem;
+  padding: 1rem;
+}
+.info_block form input,
+.info_block form textarea,
+.form_block form input,
+.form_block form textarea {
+  border: none;
+  background-color: #FAFAFA;
 }
 
 #map {
