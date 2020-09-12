@@ -83,15 +83,15 @@
             width: 90%;
         }
 
-        .skill_title{
+        .skill__title{
             font-weight: bold;
         }
 
-        .skills_container{
+        .skills__container{
             width: 90%;
             background-color: grey;
 
-            .bar{
+            .progress__bar{
                 width: 1%;
                 height: 30px;
                 background-color: $primary-color;

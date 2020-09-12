@@ -1,36 +1,37 @@
 @import 'variables';
 
-nav{
-    display:flex;
+nav {
+    display: flex;
     justify-content: space-between;
     padding: 20px 0px;
+    align-items: flex-end;
 
-    .navbar--home--logo a{
+    .navbar__logo a {
         text-decoration: none;
         color: $primary-font-color;
 
-        &:hover{
+        &:hover {
             text-decoration: none;
             color: $primary-font-color;
         }
     }
 
-    .navbar__items a{
-        color: #9E9E9E;
-        text-decoration: none;
+    .navbar__items {
 
-        &:hover{
-            text-decoration: none;
-            color: $primary-font-color;
-        }
+        li {
+            display: inline;
 
-    }
+            a {
+                color: #9E9E9E;
+                text-decoration: none;
+                padding: 10px;
 
-    .navbar__items--position li{
-        display: inline;
-        
-        a{
-            padding: 10px;
+                &:hover {
+                    text-decoration: none;
+                    color: $primary-font-color;
+                }
+            }
+
         }
     }
 }

@@ -1,5 +1,5 @@
 // adding extra class name on the same class "bar" for progress bar animation
-let bar = document.querySelectorAll('.bar');
+let bar = document.querySelectorAll('.progress__bar');
 for (let i = 0; i < bar.length; i++) {
     bar[i].className += ' bar' + (i + 1);
 }
